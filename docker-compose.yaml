@@ -1,0 +1,9 @@
+services:
+  leema-web:
+    container_name: leema-web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4041:5001"
+    restart: always
