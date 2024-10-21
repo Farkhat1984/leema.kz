@@ -42,5 +42,5 @@ def buy_product(product_id):
         return "Товар не найден", 404
 
 if __name__ == '__main__':
-    app.run(ssl_context=('cert.pem', 'key.pem'), debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=False)
 
